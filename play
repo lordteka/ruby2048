@@ -1,0 +1,3 @@
+require '~/ruby2048/ruby2048.rb'
+
+Ruby2048.new.show
