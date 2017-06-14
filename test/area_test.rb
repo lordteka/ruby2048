@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative '../ruby2048.rb' 
+require_relative '../ruby2048.rb'
 
 
 #FIXME
@@ -49,7 +49,7 @@ class AreaTest < Minitest::Test
                   (Array.new 4  { Tile.empty })]
 
     @area.update :down
-    
+
     assert_equal @area.tiles.inspect, [[0, 0, 0, 0],
                                        [0, 0, 0, 0],
                                        [0, 0, 0, 0],
@@ -63,7 +63,7 @@ class AreaTest < Minitest::Test
                   (Array.new 4  { Tile.empty })]
 
     @area.update :left
-    
+
     assert_equal @area.tiles.inspect, [[0, 0, 0, 0],
                                        [2, 0, 0, 0],
                                        [0, 0, 0, 0],
@@ -77,14 +77,14 @@ class AreaTest < Minitest::Test
                   (Array.new 4  { Tile.empty })]
 
     @area.update :right
-    
+
     assert_equal @area.tiles.inspect, [[0, 0, 0, 0],
                                        [0, 0, 0, 2],
                                        [0, 0, 0, 0],
                                        [0, 0, 0, 0]].inspect
   end
 
-  def test_fusion 
+  def test_fusion
     @area.tiles = [[Tile.new(2), Tile.new(2), Tile.empty, Tile.empty],
                    [Tile.new(2), Tile.empty, Tile.empty, Tile.new(2)],
                    [Tile.empty, Tile.empty, Tile.new(2), Tile.new(2)],

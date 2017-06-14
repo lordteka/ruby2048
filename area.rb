@@ -7,7 +7,7 @@ class Area
 
   def update(direction)
     @tiles.flatten.each { |tile| tile.update }
-    tiles_has_changed = false    
+    tiles_has_changed = false
 
     rotate direction
 
@@ -56,7 +56,7 @@ class Area
     when :up
       @tiles = @tiles.transpose
     when :down
-      @tiles = @tiles.transpose.each{ |r| r.reverse! } 
+      @tiles = @tiles.transpose.each{ |r| r.reverse! }
     end
   end
 
@@ -69,7 +69,7 @@ class Area
     when :up
       @tiles = @tiles.transpose
     when :down
-      @tiles = @tiles.each{ |r| r.reverse! }.transpose 
+      @tiles = @tiles.each{ |r| r.reverse! }.transpose
     end
   end
 
