@@ -2,7 +2,7 @@ class Area
   def initialize
     @area_sprite = Gosu::Image.new "2048area.png"
 
-    @tiles = Array.new 4 { Array.new 4 { Tile.empty } }
+    @tiles = Array.new(4) { Array.new(4) { Tile.empty } }
   end
 
   def update(direction)

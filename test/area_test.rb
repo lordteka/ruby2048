@@ -29,10 +29,10 @@ class AreaTest < Minitest::Test
   end
 
   def test_that_the_non_empty_tiles_goes_up
-    @area.tiles = [(Array.new 4  { Tile.empty }),
+    @area.tiles = [(Array.new(4) { Tile.empty }),
                   [Tile.empty, Tile.new(2), Tile.empty, Tile.empty],
-                  (Array.new 4  { Tile.empty }),
-                  (Array.new 4  { Tile.empty })]
+                  (Array.new(4) { Tile.empty }),
+                  (Array.new(4) { Tile.empty })]
 
     @area.update :up
 
@@ -43,10 +43,10 @@ class AreaTest < Minitest::Test
   end
 
   def test_that_the_non_empty_tiles_goes_down
-    @area.tiles = [(Array.new 4  { Tile.empty }),
+    @area.tiles = [(Array.new(4) { Tile.empty }),
                   [Tile.empty, Tile.new(2), Tile.empty, Tile.empty],
-                  (Array.new 4  { Tile.empty }),
-                  (Array.new 4  { Tile.empty })]
+                  (Array.new(4) { Tile.empty }),
+                  (Array.new(4) { Tile.empty })]
 
     @area.update :down
 
@@ -57,10 +57,10 @@ class AreaTest < Minitest::Test
   end
 
   def test_that_the_non_empty_tiles_goes_left
-    @area.tiles = [(Array.new 4  { Tile.empty }),
+    @area.tiles = [(Array.new(4)  { Tile.empty }),
                   [Tile.empty, Tile.new(2), Tile.empty, Tile.empty],
-                  (Array.new 4  { Tile.empty }),
-                  (Array.new 4  { Tile.empty })]
+                  (Array.new(4) { Tile.empty }),
+                  (Array.new(4) { Tile.empty })]
 
     @area.update :left
 
@@ -71,10 +71,10 @@ class AreaTest < Minitest::Test
   end
 
   def test_that_the_non_empty_tiles_goes_right
-    @area.tiles = [(Array.new 4  { Tile.empty }),
+    @area.tiles = [(Array.new(4)  { Tile.empty }),
                   [Tile.empty, Tile.new(2), Tile.empty, Tile.empty],
-                  (Array.new 4  { Tile.empty }),
-                  (Array.new 4  { Tile.empty })]
+                  (Array.new(4)  { Tile.empty }),
+                  (Array.new(4) { Tile.empty })]
 
     @area.update :right
 
